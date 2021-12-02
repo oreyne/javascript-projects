@@ -1,16 +1,28 @@
-<html lang="en-US">
+<html>
   <head>
     <title>Javascript tutorial</title>
+    <link rel="stylesheet" href="./index.css">
     <meta charset="utf-8">
-    <link rel="stylesheet" href="index.css">
   </head>
   <body>
     <h1>People entered:</h1>
     <h2 id="count-el">0</h2>
     <button id="increment-btn" onclick="increment()">Increment</button>
     <button id="save-btn" onclick="save()">Save</button>
+    <button id="purchase-btn" onclick="showError()">Purchase</button>
     <p id="welcome-el">Prvious entries: </p>
-    <script src="index.js">
+    <p id="error-el"></p>
+
+    <span id="num-one"></span>
+    <span id="num-two"></span>
+    <br />
+    <button onclick="sum()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="divide()">Divide</button>
+    <button onclick="multiply()">Multiply</button>
+    <br />
+    <span id="result"></span>
+    <script src="./js/index.js">
     </script>
   </body>
 </html>

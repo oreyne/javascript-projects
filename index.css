@@ -1,0 +1,33 @@
+#error-el {
+  color: red;
+}
+
+body {
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial
+}
+
+h1 {
+  color: goldenrod;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+button {
+  text-transform: capitalize;
+  background-color: goldenrod;
+  color: green;
+  width: 150px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 17px;
+  border: none;
+  border-radius: 2px;
+  margin-bottom: 5px;
+}
