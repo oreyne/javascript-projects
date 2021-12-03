@@ -140,16 +140,35 @@ let accommodation = {
 console.log(accommodation.rooms);
 console.log(accommodation["isFavorite"]);
 
+let largeCountries = ["China","India","USA","Indonesia","Pakistan"]
 
+// largeCountries.map((country) => {
+//   console.log("- " + country);
+// })
 
+largeCountries = ["Tuvalu","India","USA","Indonesia","Monaco"]
 
+largeCountries.pop()
+largeCountries.push("Pakistan")
+largeCountries.shift()
+largeCountries.unshift("China")
 
+largeCountries.map((country) => {
+  console.log("- " + country);
+})
 
+function returnRandomItem(){
+  return largeCountries[Math.floor(Math.random() * 5)]
+}
 
+// console.log(returnRandomItem())
 
+largeCountries = ["orange","pear","orange","orange","pear"]
 
-
-
+largeCountries.sort()
+console.log(largeCountries)
+largeCountries.reverse()
+console.log(largeCountries)
 
 
 
