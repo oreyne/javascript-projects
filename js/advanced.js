@@ -16,6 +16,8 @@ arr = [...arr, ...arr2]
 let list = ['China','Indonesia','Germany', ,'Canada','Camerun','Laos']
 let data = ['3','4','76','22','52','9']
 let numbers = [3,4,76,22,52,9]
+let test = [null, undefined, false, 0, 3,4,76,22,52,9]
+let result = 0
 
 // isArray, check if an element is an array
 console.log('isArray')
@@ -53,6 +55,20 @@ list.push('Singapur')
 console.log(list);
 list.push('Russia', 'Finland')
 console.log(list);
+
+//reduce, execute a function, operating with two values, accumulating a value and an element already analyzed
+console.log('reduce')
+result = numbers.reduce((acc, value) => acc < value ? value : acc)
+console.log(result)
+
+result = test.reduce((acc, value) => {
+  console.log(acc);
+  if (value){
+    acc.push(value)
+  }
+  return acc
+}, [])
+console.log(result)
 
 //reverse, change the order of the list, the first element will be the last and the last'll be the first
 console.log('reverse');
