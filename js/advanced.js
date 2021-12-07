@@ -73,6 +73,7 @@ console.log(result)
 //reverse, change the order of the list, the first element will be the last and the last'll be the first
 console.log('reverse');
 let changedList = list.reverse()
+console.log(list);
 console.log(changedList);
 
 // shift, remove the first element of the list, and can be saved in a variable
